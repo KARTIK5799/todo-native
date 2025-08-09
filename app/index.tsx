@@ -46,6 +46,10 @@ const newTodo ={
 setTodos([newTodo,...todos,])
 setTodoText('')
 }
+
+const removeTodo= () => {
+
+}
   
   return (
     <SafeAreaView style={styles.container}>
@@ -76,7 +80,9 @@ setTodoText('')
         <TextInput placeholder='Add new Todo' 
         value={todoText}
         onChangeText={(text)=>setTodoText(text)}
-        style={styles.newTodoInput} />
+        style={styles.newTodoInput}
+        autoCorrect={false} />
+        
         <TouchableOpacity style={styles.addButton} onPress={addTodo}>
           <Ionicons name='add' size={34} color={'#fff'} />
         </TouchableOpacity>
