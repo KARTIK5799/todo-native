@@ -72,7 +72,7 @@ export default function Index() {
     "Are you sure you want to delete this todo?",
     [
       { text: "Cancel", style: "cancel" },
-      {    
+      {     
         text: "Delete",
         style: "destructive",
         onPress: async () => {
