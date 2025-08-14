@@ -67,12 +67,12 @@ export default function Index() {
   };
 
  const deleteTodo = (id: number) => {
-  Alert.alert(
+  Alert.alert( 
     "Delete Todo",
     "Are you sure you want to delete this todo?",
     [
       { text: "Cancel", style: "cancel" },
-      {
+      { 
         text: "Delete",
         style: "destructive",
         onPress: async () => {
